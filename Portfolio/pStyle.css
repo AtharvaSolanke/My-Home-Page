@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+
+:root{
+    --bgcolor: rgb(17, 21, 28);
+    --bgcolor2: rgb(20, 24, 32);
+    --textcolor: white;
+    --dec-color: aqua;
+}
+
+#boxpop{
+    height: 80%;
+    width: 70%;
+    margin: 7% 0 0 15%;
+    background-color: #3f3f3f;
+    position: fixed;
+    z-index: 2;
+    padding: 2%;
+    font-size: 30px;
+}
+#spinx{
+    font-size: 250px;
+    margin: 0% 35% 35% 35%;
+}
+
+html{
+    font: 65%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+
+section{
+    min-height: 100vh;
+    padding: 9rem 7% 2rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background: var(--bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 1rem black;
+}
+
+.logo{
+    font-size: 2rem;
+    color: rgb(255, 0, 68);
+    font-weight: 500;
+    cursor: default;
+    font-family: Kaushan Script;
+}
+
+/* .navbar a{
+    font-size: 1.2rem;
+    color: var(--textcolor);
+    margin-left: 3rem;
+    transition: 0.5sec;
+} */
+
+
+.navbar a {
+    display: inline-block;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.25s;
+    margin-left: 0.5rem;
+    padding: 0.2rem 1rem 0rem 1rem;
+    font-family: Teko;
+}
+
+.navbar a.active{
+    color: aqua;
+}
+
+/*creating animation effect*/
+.navbar a:hover {
+    cursor: pointer;
+    color: #000000;
+    background: rgb(0, 234, 255);
+    box-shadow: 0 0 30px aqua;
+    border-radius: 400px;
+}
+/* .navbar a:active{
+    cursor: pointer;
+    color: #000000;
+    background: #00dd21;
+    box-shadow: 0 0 100px rgb(0, 255, 26);
+    border-radius: 400px;
+} */
+
+
+
+/* .navbar a:hover,
+.navbar a.active{
+    color: aqua;
+} */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-cont{
+    margin-right: 135px;
+}
+
+.myimg img{
+    width: 36vw;
+    background-color: rgb(15, 20, 26);
+    border-radius:50%;
+    box-shadow: 10px 10px 30px  rgb(13, 17, 21);
+}
+
+.home-cont h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.home-cont h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0.2rem;
+}
+.home-cont p{
+    font-size: 1.20rem;
+}
+
+.home-cont h3:nth-of-type(2){
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+span{
+    color: crimson;
+    font-weight: bold;
+}
+#job{
+    color: aqua;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.1rem solid aqua;
+    border-radius: 50%;
+    font-size: 2.25rem;
+    color: aqua;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover{
+    background: var(--dec-color);
+    color: var(--bgcolor2);
+    box-shadow: 0 0 1.5rem var(--dec-color);
+}
+
+#aimg{
+    filter: drop-shadow(0px 0px 7px rgb(0, 191, 255));
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: aqua;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem aqua;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+.btn:hover{
+    background: transparent;
+    color: aqua;
+}
+
+#linkedin{
+    color: rgb(0, 119, 181);
+}
+#linkedin:hover{
+    background: transparent;
+    /* color: aqua; */
+}
+#github{
+    color: rgb(255, 255, 255);
+}
+#github:hover{
+    background: transparent;
+    /* color: aqua; */
+}
+#twitter{
+    color: rgb(29 161 242);
+}
+#twitter:hover{
+    background: transparent;
+    /* color: aqua; */
+}
+#instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#instagram:hover{
+    /* background: transparent; */
+    color: aqua;
+}
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: var(--bgcolor2);
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.about-cont h2{
+    text-align: left;
+    line-height: 1.25;
+}
+
+.about-cont h3{
+    font-size: 2rem;
+    color: aqua;
+}
+.about-cont p{
+    font-size: 1.25rem;
+    margin: 2rem 0 3rem;
+}
+
+/* SKILLS */
+
+.skills h2{
+    margin-bottom: 5rem;
+}
+
+.skills-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-cont .skills-box{
+    flex: 1 1 25rem;
+    background: rgb(20, 24, 32);
+    padding: 0rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid rgb(20, 24, 32);
+    transition: 0.5s ease;
+}
+
+.skills-cont .skills-box:hover{
+    border-color: aqua;
+    transform: scale(1.02);
+}
+
+.skills-box i{
+    font-size: 5rem;
+    color: var(--dec-color);
+}
+
+.skills-box h3{
+    font-size: 2rem;
+}
+
+.skills-box p{
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+
+}
+
+.projects{
+    background: var(--bgcolor2);
+}
+
+.projects h2{
+    margin-bottom: 4rem;
+}
+
+.project-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-cont .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bgcolor);
+    overflow: hidden;
+    display: flex;
+}
+
+.project-box img{
+    width:  100%;
+}
+
+.project-box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+
+
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+}
+
+.project-box:hover .project-layer{
+    transform: translateY(0);
+    transition: 0.5s ease;
+}
+
+.project-layer h4{
+    font-size: 2rem;
+}
+
+.project-layer p{
+    font-size: 1.2rem;
+    margin: 0.3rem 0 1rem;
+}
+
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--textcolor);
+    border-radius: 50%;
+}
+
+.project-layer a i{
+    font-size: 1.75rem;
+    color: var(--bgcolor2);
+}
+
+.contact h2{
+    margin-bottom: 1rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--textcolor);
+    background: rgb(26, 31, 41);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: rgb(26, 31, 41);
+}
+
+.footer-text p{
+    font-size: 1.5rem;
+}
+
+.footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: var(--dec-color);
+    border-radius: 0.8rem;
+}
+
+.footer-icon a:hover{
+    box-shadow: 0 0 1rem aqua;
+
+}
+
+.footer-icon a i{
+    font-size: 2rem;
+    color: var(--bgcolor2);
+}
+
+
+@media (max-width:768px){
+    #boxpop{
+        height: 75%;
+        width: 70%;
+        margin: 15% 0 0 15%;
+        background-color: #3f3f3f;
+        position: fixed;
+        z-index: 2;
+        padding: 2%;
+        font-size: 25px;
+    }
+    #spinx{
+        font-size: 200px;
+        margin: 0%;
+    }
+    header{
+        z-index: -5;
+    }
+}
